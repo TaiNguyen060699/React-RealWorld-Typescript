@@ -1,0 +1,16 @@
+# Dockerfile
+
+# Refer compose file version 3
+version: "3"
+
+services:
+  # Service name is react-app
+  react-app:
+    # build from Dockerfile
+    build: .
+    # expose 3000 as hosting port & 3000 in container port
+    ports:
+      - "3000:3000"
+    environment:
+      # Provide your license key for activation as environment variable to docker container
+      REACT_APP_SYNCFUSION_LICENSE_KEY: 'Your Syncfusion license key'

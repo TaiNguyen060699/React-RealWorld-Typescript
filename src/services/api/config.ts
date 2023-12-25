@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import axios from 'axios';
 
 interface fetchWrapProps {
@@ -12,10 +13,11 @@ const fetchWrap = async ({ method, url, body, signal }: fetchWrapProps) => {
   const config = {
     baseURL: 'https://api.realworld.io/api',
     headers: {
-      Authorization: !!jwtToken ? `Token ${jwtToken}` : '',
+      Authorization: jwtToken ? `Token ${jwtToken}` : '',
     },
     signal: signal,
   };
+  // eslint-disable-next-line no-useless-catch
   try {
     const { data } =
       (method === 'get' && (await axios.get(url, config))) ||

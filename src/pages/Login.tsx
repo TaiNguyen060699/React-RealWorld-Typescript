@@ -27,8 +27,9 @@ const Login = () => {
     const { name, value } = event.target;
     setAccount({
       ...account,
-      [name]: value,
+      [name]: value,  
     });
+    console.log(event.target.name)
   };
 
   const onLogin = async (event: React.FormEvent<HTMLFormElement>) => {
