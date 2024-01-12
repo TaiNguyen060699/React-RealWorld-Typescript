@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
-import { pageAtom } from "../../atom";
+import { pageAtom } from "@/atom";
 
 interface PaginationProps {
   articlesCount: number;

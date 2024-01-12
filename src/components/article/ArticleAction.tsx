@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArticleProps } from '../../types';
-import FollowButton from '../common/FollowButton';
+import { ArticleProps } from '@/types';
+import FollowButton from '@/components/common/FollowButton';
 
 import { useRecoilValue } from 'recoil';
-import { isLoggedInAtom } from '../../atom';
+import { isLoggedInAtom } from '@/atom';
 
 const FAVORITED_CLASS = 'btn btn-sm btn-primary';
 const UNFAVORITED_CLASS = 'btn btn-sm btn-outline-primary';

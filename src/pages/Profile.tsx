@@ -1,8 +1,8 @@
 import { NavLink, useParams, Route, Routes } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import UserInfo from '../components/profile/UserInfo';
-import Feed from '../components/feed/Feed';
+import UserInfo from '@/components/profile/UserInfo';
+import Feed from '@/components/feed/Feed';
 
 const Profile = () => {
   const { userId } = useParams();

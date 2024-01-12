@@ -4,9 +4,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useSetRecoilState, useRecoilValue } from 'recoil';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import { registerUser } from '../services/api/user';
-import { userAtom } from '../atom';
-import { isLoggedInAtom } from '../atom';
+import { registerUser } from '@/services/api/user';
+import { userAtom } from '@/atom';
+import { isLoggedInAtom } from '@/atom';
 
 const Register = () => {
   const [account, setAccount] = useState({

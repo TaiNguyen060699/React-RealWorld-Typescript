@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import { putUser } from '../services/api/user';
-import { isLoggedInAtom, userAtom } from '../atom';
+import { putUser } from '@/services/api/user';
+import { isLoggedInAtom, userAtom } from '@/atom';
 
 const Settings = () => {
   const [settings, setSettings] = useState({

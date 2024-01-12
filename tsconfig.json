@@ -13,7 +13,15 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "paths": {
+      "@/*": ["./src/*", "./dist/*", ""],
+      "pages/*": ["src/pages/*"],
+      "components/*": ["src/components/*"],
+      "types/*": ["src/@types/*"],
+      "atom": ["src/atom"],
+      "public/*": ["public/*"]
+    }
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

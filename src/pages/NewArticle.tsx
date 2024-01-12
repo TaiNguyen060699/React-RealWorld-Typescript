@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useRecoilValue } from 'recoil';
 
-import EditorTag from '../components/tag/EditorTag';
-import { postArticle } from '../services/api/articles';
-import { isLoggedInAtom } from '../atom';
+import EditorTag from '@/components/tag/EditorTag';
+import { postArticle } from '@/services/api/articles';
+import { isLoggedInAtom } from '@/atom';
 
 interface EditorProps {
   title: string;

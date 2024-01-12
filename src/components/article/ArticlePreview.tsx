@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { postFavorites, deleteFavorites } from '../../services/api/favorites';
+import { postFavorites, deleteFavorites } from '@/services/api/favorites';
 
-import { ArticleProps } from '../../types';
-import { convertToDate } from '../../utils';
-import ArticleTag from '../tag/ArticleTag';
+import { ArticleProps } from '@/types';
+import { convertToDate } from '@/utils';
+import ArticleTag from '@/components/tag/ArticleTag';
 
 import { useRecoilValue } from 'recoil';
-import { isLoggedInAtom } from '../../atom';
+import { isLoggedInAtom } from '@/atom';
 
 const FAVORITED_CLASS = 'btn btn-sm btn-primary';
 const UNFAVORITED_CLASS = 'btn btn-sm btn-outline-primary';

@@ -4,10 +4,10 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useRecoilValue } from 'recoil';
 
-import EditorTag from '../components/tag/EditorTag';
-import Loading from '../components/common/Loading';
-import { putArticle, getArticle } from '../services/api/articles';
-import { isLoggedInAtom, userAtom } from '../atom';
+import EditorTag from '@/components/tag/EditorTag';
+import Loading from '@/components/common/Loading';
+import { putArticle, getArticle } from '@/services/api/articles';
+import { isLoggedInAtom, userAtom } from '@/atom';
 
 interface EditorProps {
   title: string;

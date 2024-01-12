@@ -5,19 +5,19 @@ import { useRecoilValue } from 'recoil';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
-import Comment from '../components/article/Comment';
-import ArticleTag from '../components/tag/ArticleTag';
-import ArticleAction from '../components/article/ArticleAction';
-import Loading from '../components/common/Loading';
+import Comment from '@/components/article/Comment';
+import ArticleTag from '@/components/tag/ArticleTag';
+import ArticleAction from '@/components/article/ArticleAction';
+import Loading from '@/components/common/Loading';
 
-import { getArticle, deleteArticle } from '../services/api/articles';
-import { deleteComment, getComments, postComment } from '../services/api/comment';
-import { postFavorites, deleteFavorites } from '../services/api/favorites';
-import { postFollow, deleteFollow } from '../services/api/profile';
+import { getArticle, deleteArticle } from '@/services/api/articles';
+import { deleteComment, getComments, postComment } from '@/services/api/comment';
+import { postFavorites, deleteFavorites } from '@/services/api/favorites';
+import { postFollow, deleteFollow } from '@/services/api/profile';
 
-import { isLoggedInAtom, userAtom } from '../atom';
-import { ArticleProps, CommentProps } from '../types';
-import { convertToDate } from '../utils';
+import { isLoggedInAtom, userAtom } from '@/atom';
+import { ArticleProps, CommentProps } from '@/types';
+import { convertToDate } from '@/utils';
 
 const Article = () => {
   const [article, setArticle] = useState<ArticleProps>({

@@ -3,12 +3,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useRecoilValue } from 'recoil';
 
-import Feed from '../components/feed/Feed';
-import LinkTag from '../components/tag/LinkTag';
-import Loading from '../components/common/Loading';
+import Feed from '@/components/feed/Feed';
+import LinkTag from '@/components/tag/LinkTag';
+import Loading from '@/components/common/Loading';
 
-import { isLoggedInAtom } from '../atom';
-import { getTags } from '../services/api/tags';
+import { isLoggedInAtom } from '@/atom';
+import { getTags } from '@/services/api/tags';
 
 const Home = () => {
   const isLoggedIn = useRecoilValue(isLoggedInAtom);
